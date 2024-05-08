@@ -2,8 +2,8 @@ class ParquetCli < Formula
   desc "Apache Parquet command-line tools and utilities"
   homepage "https://parquet.apache.org/"
   url "https://github.com/apache/parquet-mr.git",
-      tag:      "apache-parquet-1.13.1",
-      revision: "db4183109d5b734ec5930d870cdae161e408ddba"
+      tag:      "apache-parquet-1.14.0",
+      revision: "fe9179414906cc19b550d13d2819b4e16fddf8a1"
   license "Apache-2.0"
   head "https://github.com/apache/parquet-mr.git", branch: "master"
 
