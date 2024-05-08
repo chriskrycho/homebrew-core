@@ -25,7 +25,7 @@ class Jj < Formula
   def install
     ENV["LIBGIT2_NO_VENDOR"] = "1"
 
-    system "cargo", "install", "--no-default-features", "--bin", "jj", *std_cargo_args(path: "cli")
+    system "cargo", "install", "--bin", "jj", *std_cargo_args(path: "cli")
 
     generate_completions_from_executable(bin/"jj", "util", "completion", shell_parameter_format: :flag)
     (man1/"jj.1").write Utils.safe_popen_read(bin/"jj", "util", "mangen")
